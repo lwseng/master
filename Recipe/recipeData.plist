@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Recipe</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Chicken Chop</string>
+			<key>Category</key>
+			<string>Main Dish</string>
+			<key>Image</key>
+			<string>chickenChop</string>
+			<key>Ingredient</key>
+			<string>Sauce
+1) 2 Tbsp butter
+2) 1 small onion, cut into thin rings
+3) 1/4 cup sliced mushrooms
+4) 4 Tbsp ketchup
+5) 1 tsp chicken bouillon powder
+6) 2 Tbsp water
+7) 1 Tbsp brown sugar
+8) 1 tsp corn starch mixed with 2 Tbsp water
+Chicken
+1) 4 - 6 pieces boneless, skinless, chicken thighs
+2) 2 Tbsp soy sauce
+3) 2 Tbsp Worcestershire sauce
+4) 2 eggs, beaten
+5) 2 cups flour
+6) 2 cups panko breadcrumbs
+7) Oil for frying</string>
+			<key>Step</key>
+			<string>1) Pound the chicken to medium thickness (about 1/2 an inch thick)
+2) Place chicken in a large zliploc bag. Add soy sauce and Worcestershire Sauce. Mix well. Let marinade for at least 3 hours or overnight.
+3) In a small saucepan, melt the butter over medium heat. Add onion and mushrooms. Saute until onions are soft (approx 2 mins)
+4) Add ketchup, chicken bouillon powder, water, brown sugar and corn starch mixture. Bring to boil, stirring until the sauce thickens up a little bit. Turn off heat; set aside.
+5) Heat up cooking oil over medium heat in a skillet or large frying pan.
+6) Dip chicken in flour, dip in egg wash, then into breadcrumbs.
+7) Fry chicken till golden brown on each side.
+8) Serve with french fries and your choice of veggies. Gotta have french fries, though...cause they&apos;re yummy. Pour sauce over chicken just before serving.</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Chocolate Sundae</string>
+			<key>Category</key>
+			<string>Dessert</string>
+			<key>Image</key>
+			<string>chocSundae</string>
+			<key>Ingredient</key>
+			<string></string>
+			<key>Step</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Spaghetti Aglio e Olio</string>
+			<key>Category</key>
+			<string>Main Dish</string>
+			<key>Image</key>
+			<string>spaghetti</string>
+			<key>Ingredient</key>
+			<string></string>
+			<key>Step</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Baked potatoes</string>
+			<key>Category</key>
+			<string>Side Dish</string>
+			<key>Image</key>
+			<string>bakedPotatoes</string>
+			<key>Ingredient</key>
+			<string></string>
+			<key>Step</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Omelette Fried Rice</string>
+			<key>Category</key>
+			<string>Main Dish</string>
+			<key>Image</key>
+			<string>omeletteFriedRice</string>
+			<key>Ingredient</key>
+			<string></string>
+			<key>Step</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>French fries</string>
+			<key>Category</key>
+			<string>Side Dish</string>
+			<key>Image</key>
+			<string>frenchFries</string>
+			<key>Ingredient</key>
+			<string></string>
+			<key>Step</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Red Bean Soup</string>
+			<key>Category</key>
+			<string>Dessert</string>
+			<key>Image</key>
+			<string>readBeanSoup</string>
+			<key>Ingredient</key>
+			<string></string>
+			<key>Step</key>
+			<string></string>
+		</dict>
+	</array>
+</dict>
+</plist>

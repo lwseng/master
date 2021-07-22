@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vPJ-wp-Oxi" customClass="PopOutView" customModule="Recipe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="509"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AeK-r5-0j7">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="509"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqF-lZ-PkV">
+                            <rect key="frame" x="27" y="96.5" width="360" height="316.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your favourite recipe type here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8d-km-B4m">
+                                    <rect key="frame" x="20" y="10" width="320" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gG-E5-WiG">
+                                    <rect key="frame" x="20" y="50.5" width="320" height="216"/>
+                                </pickerView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="V0p-Hg-fYx">
+                                    <rect key="frame" x="0.0" y="266.5" width="360" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cxn-VW-lnX">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="50"/>
+                                            <state key="normal" title="Cancel"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fp4-h0-bu1">
+                                            <rect key="frame" x="180" y="0.0" width="180" height="50"/>
+                                            <state key="normal" title="OK"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="SCa-Tc-rCn"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="V0p-Hg-fYx" secondAttribute="bottom" id="1Oy-vW-LTk"/>
+                                <constraint firstAttribute="trailing" secondItem="g8d-km-B4m" secondAttribute="trailing" constant="20" id="1dW-g5-qu7"/>
+                                <constraint firstItem="g8d-km-B4m" firstAttribute="top" secondItem="aqF-lZ-PkV" secondAttribute="top" constant="10" id="6GI-I3-yYS"/>
+                                <constraint firstItem="3gG-E5-WiG" firstAttribute="top" secondItem="g8d-km-B4m" secondAttribute="bottom" constant="20" id="E87-33-SMz"/>
+                                <constraint firstItem="g8d-km-B4m" firstAttribute="leading" secondItem="aqF-lZ-PkV" secondAttribute="leading" constant="20" id="IPv-Xw-7qx"/>
+                                <constraint firstAttribute="trailing" secondItem="3gG-E5-WiG" secondAttribute="trailing" constant="20" id="eVe-dm-GqS"/>
+                                <constraint firstItem="V0p-Hg-fYx" firstAttribute="leading" secondItem="aqF-lZ-PkV" secondAttribute="leading" id="hRi-b2-4MA"/>
+                                <constraint firstAttribute="trailing" secondItem="V0p-Hg-fYx" secondAttribute="trailing" id="s2g-Qh-ZOM"/>
+                                <constraint firstItem="V0p-Hg-fYx" firstAttribute="top" secondItem="3gG-E5-WiG" secondAttribute="bottom" id="wcM-Pg-Jk9"/>
+                                <constraint firstItem="3gG-E5-WiG" firstAttribute="leading" secondItem="aqF-lZ-PkV" secondAttribute="leading" constant="20" id="y5o-Yr-9Gx"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="aqF-lZ-PkV" firstAttribute="centerX" secondItem="AeK-r5-0j7" secondAttribute="centerX" id="65k-kE-jzF"/>
+                        <constraint firstItem="aqF-lZ-PkV" firstAttribute="centerY" secondItem="AeK-r5-0j7" secondAttribute="centerY" id="FhQ-zy-eC0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AeK-r5-0j7" secondAttribute="trailing" id="XtD-FI-pLv"/>
+                <constraint firstItem="AeK-r5-0j7" firstAttribute="leading" secondItem="vPJ-wp-Oxi" secondAttribute="leading" id="ZJL-0M-ur8"/>
+                <constraint firstItem="AeK-r5-0j7" firstAttribute="top" secondItem="vPJ-wp-Oxi" secondAttribute="top" id="nIF-wU-ehi"/>
+                <constraint firstAttribute="bottom" secondItem="AeK-r5-0j7" secondAttribute="bottom" id="vUJ-d5-1Ky"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnCancel" destination="Cxn-VW-lnX" id="qEj-WE-Dqv"/>
+                <outlet property="btnOk" destination="fp4-h0-bu1" id="2oO-FZ-FGZ"/>
+                <outlet property="pickerView" destination="3gG-E5-WiG" id="2aW-AU-Ez3"/>
+            </connections>
+            <point key="canvasLocation" x="-1.4492753623188408" y="590.29017857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
