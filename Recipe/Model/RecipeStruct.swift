@@ -8,6 +8,7 @@
 import Foundation
 
 struct Recipe{
+    var id: Int
     var name: String
     var category: String
     var image: String

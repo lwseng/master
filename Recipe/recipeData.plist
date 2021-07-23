@@ -47,9 +47,15 @@ Chicken
 			<key>Image</key>
 			<string>chocSundae</string>
 			<key>Ingredient</key>
-			<string></string>
+			<string>1 chocolate brownie, cut into chunks
+37g packet Maltesers
+2 tbsp chocolate sauce or melted chocolate
+100g raspberries
+4 scoops chocolate ice cream
+4 scoops vanilla ice cream
+Whipped cream</string>
 			<key>Step</key>
-			<string></string>
+			<string>Layer everything in a tall knickerbocker glory glass, leaving the whipped cream til last. There is no order required.</string>
 		</dict>
 		<dict>
 			<key>Name</key>
@@ -59,9 +65,12 @@ Chicken
 			<key>Image</key>
 			<string>spaghetti</string>
 			<key>Ingredient</key>
-			<string></string>
+			<string>1 pound uncooked spaghetti
+6 cloves garlic, thinly sliced
+½ cup olive oil ¼ teaspoon red pepper flakes, or to taste salt and freshly ground black pepper to taste ¼ cup chopped fresh Italian parsley 1 cup finely grated Parmigiano-Reggiano cheese</string>
 			<key>Step</key>
-			<string></string>
+			<string>Step 1 - Bring a large pot of lightly salted water to a boil. Cook spaghetti in the boiling water, stirring occasionally until cooked through but firm to the bite, about 12 minutes. Drain and transfer to a pasta bowl.
+ Step 2 - Combine garlic and olive oil in a cold skillet. Cook over medium heat to slowly toast garlic, about 10 minutes. Reduce heat to medium-low when olive oil begins to bubble. Cook and stir until garlic is golden brown, about another 5 minutes. Remove from heat. 		 Step 3 - Stir red pepper flakes, black pepper, and salt into the pasta. Pour in olive oil and garlic, and sprinkle on Italian parsley and half of the Parmigiano-Reggiano cheese; stir until combined. 		 Step 4 - Serve pasta topped with the remaining Parmigiano-Reggiano cheese.</string>
 		</dict>
 		<dict>
 			<key>Name</key>
@@ -71,9 +80,9 @@ Chicken
 			<key>Image</key>
 			<string>bakedPotatoes</string>
 			<key>Ingredient</key>
-			<string></string>
+			<string>1 medium baking potato 1 teaspoon olive oil ½ teaspoon salt 2 teaspoons butter 1 pinch freshly ground black pepper ¼ cup shredded Cheddar cheese</string>
 			<key>Step</key>
-			<string></string>
+			<string>Step 1 - Preheat the oven to 300 degrees F (150 degrees C). Scrub the potato, and pierce the skin several times with a knife or fork. Rub the skin with olive oil, then with salt. 		 Step 2 - Place the potato in the preheated oven, and bake for 90 minutes, or until slightly soft and golden brown. Slice the potato down the center, and serve with butter and black pepper. Sprinkle shredded Cheddar cheese over the top, if desired.</string>
 		</dict>
 		<dict>
 			<key>Name</key>
@@ -83,9 +92,32 @@ Chicken
 			<key>Image</key>
 			<string>omeletteFriedRice</string>
 			<key>Ingredient</key>
-			<string></string>
+			<string>For Ketchup Fried Rice ½ onion 1 boneless, skinless chicken thighs 1 Tbsp extra-virgin olive oil ½ cup frozen mixed vegetables (defrosted) ⅛ tsp kosher/sea salt (I use Diamond Crystal; use half for table salt) ⅛ tsp freshly ground black pepper 2 servings cooked Japanese short-grain rice 1 Tbsp ketchup (and more for decoration)
+1 tsp soy sauce
+For omelette 2 large egg (50 g w/o shell) (separated) 2 Tbsp milk (separated) 2 Tbsp extra-virgin olive oil (separated) 6 Tbsp shredded sharp cheddar cheese (or any other kind)</string>
 			<key>Step</key>
-			<string></string>
+			<string>Gather all the ingredients.
+
+To Make Ketchup Fried Rice
+- Chop the onion finely.
+- Cut the chicken into ½&quot; (1.3 cm) pieces.
+- Heat the oil in a non-stick pan and sauté the onion until softened.
+- Add the chicken and cook until no longer pink.
+- Add the mixed vegetables and season with salt and pepper.
+- Add the rice and break into small pieces.
+- Add ketchup and soy sauce and combine everything evenly with a spatula. Transfer the fried rice to a plate and wash the pan.
+
+To Make Omurice
+- We&apos;ll make omurice one at a time. Whisk 1 egg and 1 Tbsp milk in a small bowl.
+- Heat 1 Tbsp olive oil in the pan over medium high heat (make sure the surface of the pan is nicely coated with oil).
+- When the pan is hot, pour the egg mixture into the pan and tilt to cover the bottom of the pan. Lower the heat when the bottom of the egg has set (but still soft on top).
+- Put the 3 Tbsp cheese and half of the ketchup fried rice on top of the omelette.
+- Use the spatula to fold both sides of omelette toward the middle to cover the fried rice. Slowly move the omurice to the edge of the pan.
+- Hold a plate in one hand and the pan in the other hand, flip the pan and move the omurice to the plate.
+- While it’s still hot, cover the omurice with a paper towel and shape it into American /Rugby football shape. Repeat this process to make the second omurice with the rest of ingredients.
+
+To Serve
+- Drizzle the ketchup on top for decoration. Continue making omelette till the fried rice is all used.</string>
 		</dict>
 		<dict>
 			<key>Name</key>
@@ -95,9 +127,20 @@ Chicken
 			<key>Image</key>
 			<string>frenchFries</string>
 			<key>Ingredient</key>
-			<string></string>
+			<string>- 10 large russet potatoes, peeled and rinsed
+- 2 quarts vegetable oil, can sub canola oil
+- Salt</string>
 			<key>Step</key>
-			<string></string>
+			<string>- Slice the potatoes into ½ inch thick sticks. Using a French fry cutter makes this much easier.
+- Soak the potato slices in cold water for a minimum of one hour, and up to overnight. The longer, the better as this process removes the starch which makes for extra crispy fries.
+- Rinse the fries twice with cold water.
+- Lay the fries on paper towels or a clean dishcloth and pat them as dry as possible.
+- Heat oil in a deep fryer or dutch oven to 300 degrees F. You’ll need to fry in about six batches, begin with a quart of oil and add more as needed. Frying too many at once makes them less crispy.
+- Use a slotted spoon to add the potatoes to the oil and fry for about 5-6 minutes. The oil should bubble lightly, we’re only heating the potatoes, we don’t want them to crisp yet.
+- Place the cooked potatoes on a paper towel lined plate and fry the rest of the remaining batches.
+- Increase the heat to 400 degrees F and fry each batch a second time until they are crisp and golden-brown, about 5 minutes or so.
+- Remove them and place them on dry paper towels. Sprinkle with salt as soon as they come out.
+- Serve with ketchup or fry sauce and enjoy!</string>
 		</dict>
 		<dict>
 			<key>Name</key>
@@ -107,9 +150,13 @@ Chicken
 			<key>Image</key>
 			<string>readBeanSoup</string>
 			<key>Ingredient</key>
-			<string></string>
+			<string>2 cups dried adzuki beans 8 cups water ½ cup sugar ¼ teaspoon orange zest 2-3 tablespoons tapioca pearls</string>
 			<key>Step</key>
-			<string></string>
+			<string>1. First, rinse the beans under cold water. Then, soak the beans in water for at least 8 hours (overnight).
+2. Drain the beans and transfer to a medium-sized pot. Add 6 cups of fresh water. Bring to a boil, then let simmer for 1 hour. Over the course of the hour, add an additional 2 cups of water as needed.
+3. When the beans look soft and broken down, use an immersion blender to blend until the beans are just broken up--it shouldn’t be completely smooth (unless that’s your preference--you’re the cook here!). You can also transfer to a blender and pulse a few times until you achieve your desired consistency.
+4. Transfer the blended mixture back to the pot. If you like a soupier consistency, feel free to add additional water at this stage until you reach your desired consistency. Add the sugar and orange zest. Stir over medium to medium-high heat to dissolve the sugar. The mixture should bubble very gently.
+5. Next, add the tapioca. Cook for 20 minutes until the tapioca pearls become translucent. Some recipes recommend cooking the tapioca separately, but it works just fine to add them directly to the soup. When the tapioca pearls are totally translucent, it’s ready to serve!</string>
 		</dict>
 	</array>
 </dict>

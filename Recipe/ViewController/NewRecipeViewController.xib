@@ -20,6 +20,7 @@
                 <outlet property="labelName" destination="0Vl-Le-1hH" id="xO9-ja-j6f"/>
                 <outlet property="labelStep" destination="FZs-na-hZo" id="F0p-pV-v5s"/>
                 <outlet property="recipeImageView" destination="BFP-qx-0jR" id="kgg-ej-vlX"/>
+                <outlet property="scrollView" destination="VOs-pa-HNe" id="rqD-O3-yy5"/>
                 <outlet property="textFieldName" destination="HnO-ur-NZ0" id="RUd-3Q-3Bx"/>
                 <outlet property="textViewIngredients" destination="5sG-kX-Kt0" id="bxx-e0-7wR"/>
                 <outlet property="textViewStep" destination="5Bc-vH-7b6" id="pN3-SP-LL9"/>
@@ -32,13 +33,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOs-pa-HNe">
-                    <rect key="frame" x="0.0" y="44" width="414" height="768"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5RO-c1-ZVG">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="731.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="831.5"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3BI-hL-Sb2">
-                                    <rect key="frame" x="20" y="0.0" width="374" height="731.5"/>
+                                    <rect key="frame" x="20" y="20" width="374" height="791.5"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="MRf-jx-wbx">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="125.5"/>
@@ -174,15 +175,26 @@
                                                 </textView>
                                             </subviews>
                                         </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zW-db-AzT">
+                                            <rect key="frame" x="0.0" y="741.5" width="374" height="50"/>
+                                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="vef-ch-0FA"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            <state key="normal" title="Save">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
                                     </subviews>
                                 </stackView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="3BI-hL-Sb2" secondAttribute="trailing" constant="20" id="5aR-Fs-QyR"/>
-                                <constraint firstItem="3BI-hL-Sb2" firstAttribute="top" secondItem="5RO-c1-ZVG" secondAttribute="top" id="GNS-8n-gq0"/>
+                                <constraint firstItem="3BI-hL-Sb2" firstAttribute="top" secondItem="5RO-c1-ZVG" secondAttribute="top" constant="20" id="GNS-8n-gq0"/>
                                 <constraint firstItem="3BI-hL-Sb2" firstAttribute="leading" secondItem="5RO-c1-ZVG" secondAttribute="leading" constant="20" id="fmZ-hy-31P"/>
-                                <constraint firstAttribute="bottom" secondItem="3BI-hL-Sb2" secondAttribute="bottom" id="r0W-jB-JXp"/>
+                                <constraint firstAttribute="bottom" secondItem="3BI-hL-Sb2" secondAttribute="bottom" constant="20" id="r0W-jB-JXp"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -196,25 +208,14 @@
                     <viewLayoutGuide key="contentLayoutGuide" id="OsR-BE-6Vs"/>
                     <viewLayoutGuide key="frameLayoutGuide" id="zMq-BG-Y1d"/>
                 </scrollView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zW-db-AzT">
-                    <rect key="frame" x="0.0" y="812" width="414" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="vef-ch-0FA"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <state key="normal" title="Save"/>
-                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="8zW-db-AzT" firstAttribute="top" secondItem="VOs-pa-HNe" secondAttribute="bottom" id="AJa-G9-8Gy"/>
                 <constraint firstItem="VOs-pa-HNe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Bax-ON-uvF"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8zW-db-AzT" secondAttribute="bottom" id="LIl-rU-TSM"/>
                 <constraint firstItem="VOs-pa-HNe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ljw-fR-pyL"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8zW-db-AzT" secondAttribute="trailing" id="LuM-xz-ju0"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VOs-pa-HNe" secondAttribute="trailing" id="bbn-wV-PiV"/>
-                <constraint firstItem="8zW-db-AzT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uml-Co-Wvj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VOs-pa-HNe" secondAttribute="bottom" id="kKG-N0-cZI"/>
             </constraints>
             <point key="canvasLocation" x="89.855072463768124" y="53.571428571428569"/>
         </view>
@@ -227,6 +228,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

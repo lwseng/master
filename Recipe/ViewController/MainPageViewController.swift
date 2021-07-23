@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SQLite
 
 class MainPageViewController: UIViewController {
     
@@ -27,12 +28,36 @@ class MainPageViewController: UIViewController {
         
         title = "Home Page"
         
-        loadData()
+        if firstTimeLaunchApp(){ //first time launch app
+            showWelcomeMessage()
+        }
         setupButton()
         setupCollectionView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        loadData()
+    }
+    
+    func showWelcomeMessage(){
+        let nib = UINib(nibName: "WelcomeMessageView", bundle: nil)
+        let myNibView = nib.instantiate(withOwner: self, options: nil)[0] as! WelcomeMessageView
+        
+        myNibView.frame = self.view.bounds
+        myNibView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        myNibView.setupView()
+        
+        let currentWindow = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+        UIView.transition(with: currentWindow!, duration: 0.2, options: UIView.AnimationOptions.transitionCrossDissolve,
+                          animations: {
+                            currentWindow!.addSubview(myNibView)
+        }, completion: nil)
+    }
+    
     func loadData(){
+        recipe.removeAll()
+        categoryArr.removeAll()
+        
         if let path = Bundle.main.url(forResource: "recipetypes", withExtension: "xml") {
             if let parser = XMLParser(contentsOf: path) {
                 parser.delegate = self
@@ -40,23 +65,31 @@ class MainPageViewController: UIViewController {
             }
         }
         
-        if let path = Bundle.main.path(forResource: "recipeData", ofType: "plist") {
-            guard let recipeDict = NSDictionary(contentsOfFile: path) else {
-                return
-            }
+        do{
+            let db = try dbConnection()
+            
+            let id = Expression<Int64>("id")
+            let name = Expression<String>("name")
+            let category = Expression<String>("category")
+            let image = Expression<String>("image")
+            let ingredient = Expression<String>("ingredient")
+            let step = Expression<String>("step")
+            
+            //SELECT * FROM Recipe
+            for user in try db.prepare(Table("Recipe")) {
+                let id = user[id]
+                let name = user[name]
+                let category = user[category]
+                let image = user[image]
+                let ingredient = user[ingredient]
+                let step = user[step]
 
-            let recipePlist = recipeDict["Recipe"] as! [[String: Any]]
-
-            for index in 0 ..< recipePlist.count{
-                let name = recipePlist[index]["Name"] as! String
-                let category = recipePlist[index]["Category"] as! String
-                let image = recipePlist[index]["Image"] as! String
-                let ingredient = recipePlist[index]["Ingredient"] as! String
-                let step = recipePlist[index]["Step"] as! String
-
-                let itemRecipe = Recipe(name: name, category: category, image: image, ingredient: ingredient, step: step)
+                let itemRecipe = Recipe(id: Int(id), name: name, category: category, image: image, ingredient: ingredient, step: step)
                 recipe.append(itemRecipe)
             }
+            collectionView.reloadData()
+        }catch{
+            print(error)
         }
     }
 
@@ -114,7 +147,6 @@ extension MainPageViewController: XMLParserDelegate{
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
 
         self.element = elementName
-
     }
     
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
@@ -159,19 +191,30 @@ extension MainPageViewController: UICollectionViewDelegate, UICollectionViewData
         if selectedCategory != "All"{
             var item = [Recipe]()
             for index in 0 ..< recipe.count{
-                if recipe[index].category == selectedCategory{
+                if recipe[index].category == selectedCategory{ //dont append duplicate category
                     item.append(recipe[index])
                 }
             }
             cell.recipeName.text = item[indexPath.item].name
             cell.recipeCategory.text = item[indexPath.item].category
-            cell.recipeImage.image = UIImage(named: item[indexPath.item].image)
-        }else{
+            
+            //decode image data to show it
+            if let dataDecoded = NSData(base64Encoded: item[indexPath.item].image, options: .ignoreUnknownCharacters){
+                let decodedimage = UIImage(data: dataDecoded as Data)
+                cell.recipeImage.image = decodedimage
+            }
+            
+        }else{ // all category
             let item = recipe
             
             cell.recipeName.text = item[indexPath.item].name
             cell.recipeCategory.text = item[indexPath.item].category
-            cell.recipeImage.image = UIImage(named: item[indexPath.item].image)
+            
+            //decode image data to show it
+            if let dataDecoded = NSData(base64Encoded: item[indexPath.item].image, options: .ignoreUnknownCharacters){
+                let decodedimage = UIImage(data: dataDecoded as Data)
+                cell.recipeImage.image = decodedimage
+            }
         }
         
         return cell
@@ -183,7 +226,7 @@ extension MainPageViewController: UICollectionViewDelegate, UICollectionViewData
         if selectedCategory != "All"{
             var item = [Recipe]()
             for index in 0 ..< recipe.count{
-                if recipe[index].category == selectedCategory{
+                if recipe[index].category == selectedCategory{ //append once for same category
                     item.append(recipe[index])
                 }
             }
